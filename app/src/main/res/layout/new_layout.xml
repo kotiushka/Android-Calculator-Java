@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10sp"
+        android:layout_height="400sp"
+        android:ellipsize="start"
+        android:gravity="bottom|end"
+        android:text="@string/nul"
+        android:textColor="@color/white"
+        android:textSize="65sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button style="@style/ActionButton"
+                android:background="@color/teal_700"
+                android:text="@string/AC"
+                android:onClick="AC"/>
+            <Button style="@style/ActionButton"
+                android:text="@string/rightd"
+                android:onClick="Right"/>
+            <Button style="@style/ActionButton"
+                android:text="@string/leftd"
+                android:onClick="Left"/>
+            <Button style="@style/ActionButton"
+                android:text="@string/DIL"
+                android:onClick="Dil"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button style="@style/NumberButton"
+                android:text="@string/seven"
+                android:onClick="Seven"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Eight"
+                android:text="@string/eight"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Nine"
+                android:text="@string/nine"/>
+            <Button style="@style/ActionButton"
+                android:onClick="Mnoj"
+                android:text="@string/MNOJ"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button style="@style/NumberButton"
+                android:onClick="Four"
+                android:text="@string/four"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Five"
+                android:text="@string/five"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Six"
+                android:text="@string/six"/>
+            <Button style="@style/ActionButton"
+                android:onClick="Plus"
+                android:text="@string/PLUS"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button style="@style/NumberButton"
+                android:onClick="Three"
+                android:text="@string/three"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Two"
+                android:text="@string/two"/>
+            <Button style="@style/NumberButton"
+                android:onClick="One"
+                android:text="@string/one"/>
+            <Button style="@style/ActionButton"
+                android:text="@string/MIN"
+                android:onClick="Minus"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button style="@style/NumberButton"
+                android:onClick="Tok"
+                android:text="@string/tok"/>
+            <Button style="@style/NumberButton"
+                android:onClick="Zero"
+                android:text="@string/nul"/>
+            <Button style="@style/NumberButton"
+                android:onClick="DEL"
+                android:text="@string/DEL"/>
+            <Button style="@style/ActionButton"
+                android:text="@string/DORIV"
+                android:onClick="Doriv"
+                android:background="@color/teal_700"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
